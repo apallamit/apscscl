@@ -1,0 +1,93 @@
+Build a Futuristic Admin Dashboard
+
+Overview:
+We need a cutting-edge “futuristic” admin console for our APSCSCL Trip Bookings project. It must be a full React+Vite boilerplate—functional components, reusable UI, crisp animations, and Google-Maps integration—matching the style of the two attached mockups.
+
+Tech Stack:
+
+React (hooks, functional) + Vite
+
+Tailwind CSS + custom MUI theme (+ @mui/icons)
+
+React Router (or your state/routing of choice)
+
+Google Maps JavaScript API (geocoding + map + geo-fencing)
+
+Key Requirements:
+
+Login Page
+
+Email + strong-password validation
+
+Preloaded “Test User” credentials
+
+Minimal, centered form with subtle animation
+
+Global Layout
+
+Header:
+
+Left: hamburger → toggles sidebar (morphs between Mockup 1 and 2)
+
+Center: search input
+
+Right: notifications bell + avatar dropdown
+
+Sidebar:
+
+“Master” section → items: Good Seeds, Buffer Gowdan, MLS Points
+
+Collapsible with icons + text, matching mockup styles
+
+Good Seeds CRUD Page (/master/good-seeds)
+
+“Add Good Seed” Modal/Panel with fields:
+
+District (text/select)
+
+Transport Type (select)
+
+Good Name (text)
+
+Route Address (autocomplete via Google Places)
+
+On address selection → auto-fill street, city, state, latitude, longitude, pincode, and draw geo-fencing polygon on map
+
+Map Preview: live Google Map showing marker + fenced area
+
+Actions:
+
+Reset → clears form & map
+
+Submit → logs JSON payload in console and POSTs to /api/good-seeds
+
+Component Library & Theming
+
+/src/components/ folder of fully typed, theme-aware UI: Button, Input, Modal, Card, MapWrapper, etc.
+
+Global Tailwind + MUI theme config for colors, shadows, transitions
+
+Project Scaffold & Documentation
+
+Complete folder structure with sample files:
+
+css
+Copy
+Edit
+src/
+  api/
+  components/
+  pages/
+  routes/
+  styles/
+README.md with npm install + npm run dev instructions
+
+Embed 2–3 screenshots (or Vite preview link) showing login, sidebar toggled, and Good Seeds form/map
+
+Style Notes:
+
+Sleek, dark/light dual theme option
+
+Soft neon glows, glass-morphism panels, smooth hover/focus animations
+
+Responsive: desktop + tablet breakpoints
